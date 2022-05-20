@@ -1,8 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import { useState } from 'react';
-import HeroSection from './components/HeroSection';
 import Home from './components/pages/Home';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
@@ -15,7 +13,7 @@ function App() {
     <>
     <Router>
     <Navbar/>
-    {/* <Home /> */}
+    
       <Routes>
           <Route  path='/' exact element={<Home/>} />
           <Route path='/services' element={<Services/>} />
